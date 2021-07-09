@@ -1,3 +1,4 @@
 /home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/CMakeFiles/learning_llvm.dir
+/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/CMakeFiles/ast.dir
+/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/CMakeFiles/lexer.dir

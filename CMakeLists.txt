@@ -3,5 +3,5 @@ project(learning_llvm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(learning_llvm
-        llvm-tutorial/lexer.cpp)
+add_executable(lexer llvm-tutorial/lexer.cpp)
+add_executable(ast llvm-tutorial/ast.cpp)

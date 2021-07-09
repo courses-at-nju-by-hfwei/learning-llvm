@@ -130,17 +130,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named learning_llvm
+# Target rules for targets named ast
 
 # Build rule for target.
-learning_llvm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learning_llvm
-.PHONY : learning_llvm
+ast: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ast
+.PHONY : ast
 
 # fast build rule for target.
-learning_llvm/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learning_llvm.dir/build.make CMakeFiles/learning_llvm.dir/build
-.PHONY : learning_llvm/fast
+ast/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ast.dir/build.make CMakeFiles/ast.dir/build
+.PHONY : ast/fast
+
+#=============================================================================
+# Target rules for targets named lexer
+
+# Build rule for target.
+lexer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lexer
+.PHONY : lexer
+
+# fast build rule for target.
+lexer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/build
+.PHONY : lexer/fast
+
+llvm-tutorial/ast.o: llvm-tutorial/ast.cpp.o
+
+.PHONY : llvm-tutorial/ast.o
+
+# target to build an object file
+llvm-tutorial/ast.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ast.dir/build.make CMakeFiles/ast.dir/llvm-tutorial/ast.cpp.o
+.PHONY : llvm-tutorial/ast.cpp.o
+
+llvm-tutorial/ast.i: llvm-tutorial/ast.cpp.i
+
+.PHONY : llvm-tutorial/ast.i
+
+# target to preprocess a source file
+llvm-tutorial/ast.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ast.dir/build.make CMakeFiles/ast.dir/llvm-tutorial/ast.cpp.i
+.PHONY : llvm-tutorial/ast.cpp.i
+
+llvm-tutorial/ast.s: llvm-tutorial/ast.cpp.s
+
+.PHONY : llvm-tutorial/ast.s
+
+# target to generate assembly for a file
+llvm-tutorial/ast.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ast.dir/build.make CMakeFiles/ast.dir/llvm-tutorial/ast.cpp.s
+.PHONY : llvm-tutorial/ast.cpp.s
 
 llvm-tutorial/lexer.o: llvm-tutorial/lexer.cpp.o
 
@@ -148,7 +188,7 @@ llvm-tutorial/lexer.o: llvm-tutorial/lexer.cpp.o
 
 # target to build an object file
 llvm-tutorial/lexer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learning_llvm.dir/build.make CMakeFiles/learning_llvm.dir/llvm-tutorial/lexer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/llvm-tutorial/lexer.cpp.o
 .PHONY : llvm-tutorial/lexer.cpp.o
 
 llvm-tutorial/lexer.i: llvm-tutorial/lexer.cpp.i
@@ -157,7 +197,7 @@ llvm-tutorial/lexer.i: llvm-tutorial/lexer.cpp.i
 
 # target to preprocess a source file
 llvm-tutorial/lexer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learning_llvm.dir/build.make CMakeFiles/learning_llvm.dir/llvm-tutorial/lexer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/llvm-tutorial/lexer.cpp.i
 .PHONY : llvm-tutorial/lexer.cpp.i
 
 llvm-tutorial/lexer.s: llvm-tutorial/lexer.cpp.s
@@ -166,7 +206,7 @@ llvm-tutorial/lexer.s: llvm-tutorial/lexer.cpp.s
 
 # target to generate assembly for a file
 llvm-tutorial/lexer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learning_llvm.dir/build.make CMakeFiles/learning_llvm.dir/llvm-tutorial/lexer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/llvm-tutorial/lexer.cpp.s
 .PHONY : llvm-tutorial/lexer.cpp.s
 
 # Help Target
@@ -177,7 +217,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... learning_llvm"
+	@echo "... ast"
+	@echo "... lexer"
+	@echo "... llvm-tutorial/ast.o"
+	@echo "... llvm-tutorial/ast.i"
+	@echo "... llvm-tutorial/ast.s"
 	@echo "... llvm-tutorial/lexer.o"
 	@echo "... llvm-tutorial/lexer.i"
 	@echo "... llvm-tutorial/lexer.s"

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/ast.dir/llvm-tutorial/ast.cpp.o -o ast 
