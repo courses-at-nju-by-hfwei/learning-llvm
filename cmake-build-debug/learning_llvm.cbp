@@ -27,11 +27,45 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="lexer">
+				<Option output="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/lexer" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 lexer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lexer/fast">
+				<Option output="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/lexer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 lexer/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,8 +115,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="lexer">
-				<Option output="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/lexer" prefix_auto="0" extension_auto="0"/>
+			<Target title="parser">
+				<Option output="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/parser" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -97,14 +131,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 lexer"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 parser"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="lexer/fast">
-				<Option output="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/lexer" prefix_auto="0" extension_auto="0"/>
+			<Target title="parser/fast">
+				<Option output="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/parser" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -119,7 +153,17 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 lexer/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 parser/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hengxin/Documents/git-projects/learning/learning-llvm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -131,6 +175,9 @@
 		</Unit>
 		<Unit filename="/home/hengxin/Documents/git-projects/learning/learning-llvm/llvm-tutorial/lexer.cpp">
 			<Option target="lexer"/>
+		</Unit>
+		<Unit filename="/home/hengxin/Documents/git-projects/learning/learning-llvm/llvm-tutorial/parser.cpp">
+			<Option target="parser"/>
 		</Unit>
 		<Unit filename="/home/hengxin/Documents/git-projects/learning/learning-llvm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

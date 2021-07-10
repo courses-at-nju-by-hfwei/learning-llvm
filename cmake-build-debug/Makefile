@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lexer
+
+# Build rule for target.
+lexer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lexer
+.PHONY : lexer
+
+# fast build rule for target.
+lexer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/build
+.PHONY : lexer/fast
+
+#=============================================================================
 # Target rules for targets named ast
 
 # Build rule for target.
@@ -143,17 +156,17 @@ ast/fast:
 .PHONY : ast/fast
 
 #=============================================================================
-# Target rules for targets named lexer
+# Target rules for targets named parser
 
 # Build rule for target.
-lexer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lexer
-.PHONY : lexer
+parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser
+.PHONY : parser
 
 # fast build rule for target.
-lexer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/build
-.PHONY : lexer/fast
+parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
+.PHONY : parser/fast
 
 llvm-tutorial/ast.o: llvm-tutorial/ast.cpp.o
 
@@ -209,6 +222,33 @@ llvm-tutorial/lexer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexer.dir/build.make CMakeFiles/lexer.dir/llvm-tutorial/lexer.cpp.s
 .PHONY : llvm-tutorial/lexer.cpp.s
 
+llvm-tutorial/parser.o: llvm-tutorial/parser.cpp.o
+
+.PHONY : llvm-tutorial/parser.o
+
+# target to build an object file
+llvm-tutorial/parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/llvm-tutorial/parser.cpp.o
+.PHONY : llvm-tutorial/parser.cpp.o
+
+llvm-tutorial/parser.i: llvm-tutorial/parser.cpp.i
+
+.PHONY : llvm-tutorial/parser.i
+
+# target to preprocess a source file
+llvm-tutorial/parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/llvm-tutorial/parser.cpp.i
+.PHONY : llvm-tutorial/parser.cpp.i
+
+llvm-tutorial/parser.s: llvm-tutorial/parser.cpp.s
+
+.PHONY : llvm-tutorial/parser.s
+
+# target to generate assembly for a file
+llvm-tutorial/parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/llvm-tutorial/parser.cpp.s
+.PHONY : llvm-tutorial/parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,12 +259,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ast"
 	@echo "... lexer"
+	@echo "... parser"
 	@echo "... llvm-tutorial/ast.o"
 	@echo "... llvm-tutorial/ast.i"
 	@echo "... llvm-tutorial/ast.s"
 	@echo "... llvm-tutorial/lexer.o"
 	@echo "... llvm-tutorial/lexer.i"
 	@echo "... llvm-tutorial/lexer.s"
+	@echo "... llvm-tutorial/parser.o"
+	@echo "... llvm-tutorial/parser.i"
+	@echo "... llvm-tutorial/parser.s"
 .PHONY : help
 
 

@@ -18,7 +18,7 @@ enum Token {
 static std::string IdentifierStr;
 static double NumVal;
 
-static int gettok() {
+static int getToken() {
     static int lastChar = ' ';
 
     // skip whitespace
@@ -69,7 +69,7 @@ static int gettok() {
 
         // return the next token
         if (lastChar != EOF) {
-            return gettok();
+            return getToken();
         }
     }
 
@@ -84,7 +84,7 @@ static int gettok() {
 
 int main() {
     while (true) {
-        int token = gettok();
+        int token = getToken();
         std::cout << "The token is: " << token << std::endl;
     }
 }
