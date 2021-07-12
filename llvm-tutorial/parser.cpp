@@ -3,6 +3,7 @@
 //
 
 #include <memory>
+#include <map>
 #include "lexer.cpp"
 #include "ast.cpp"
 
@@ -30,6 +31,8 @@ static std::unique_ptr<ExpressionAST> parseNumberExpression() {
     getNextToken();
     return std::move(result);
 }
+
+static std::unique_ptr<ExpressionAST> ParseExpression();
 
 /**
  * parenthesisexpression ::= '(' expression ')'
@@ -92,7 +95,11 @@ static std::unique_ptr<ExpressionAST> parseIdentifierExpression() {
     return std::make_unique<CallExpressionAST>(id, std::move(args));
 }
 
-static std::unique_ptr<ExpressionAST> parsePrimary() {
+/**
+ * primary ::= identifierexpression | numberexpression | parenthesisexpression
+ * @return
+ */
+static std::unique_ptr<ExpressionAST> ParsePrimary() {
     switch (currentToken) {
         case tok_identifier:
             return parseIdentifierExpression();
@@ -103,4 +110,62 @@ static std::unique_ptr<ExpressionAST> parsePrimary() {
         default:
             return logError("Unknown token when expecting an expression.");
     }
+}
+
+static std::map<char, int> BinaryOpPrecedence;
+
+static int GetTokenPrecedence() {
+    switch (currentToken) {
+        case '<':
+        case '>':
+            return 10;
+        case '+':
+        case '-':
+            return 20;
+        case '*':
+        case '/':
+            return 40;
+        default:
+            return -1;
+    }
+}
+
+static std::unique_ptr<ExpressionAST> ParseBinaryOpRHS(
+        int precedence, std::unique_ptr<ExpressionAST> LHS) {
+    while (true) {
+        int tokenPrecedence = GetTokenPrecedence();
+        if (tokenPrecedence < precedence) {
+            return LHS;
+        }
+
+        int binOp = currentToken;
+        getNextToken(); // eat binOp
+
+        // parse the primary expression after binOp
+        auto RHS = ParsePrimary();
+        if (!RHS) {
+            return nullptr;
+        }
+
+        int nextPrecedence = GetTokenPrecedence();
+        if (precedence < nextPrecedence) {
+            RHS = ParseBinaryOpRHS(tokenPrecedence + 1, std::move(RHS));
+            if (!RHS) {
+                return nullptr;
+            }
+        }
+
+        // merge LHS/RHS: create an AST node
+        LHS = std::make_unique<BinaryExpressionAST>(binOp,
+                                                    std::move(LHS), std::move(RHS));
+    }
+}
+
+static std::unique_ptr<ExpressionAST> ParseExpression() {
+    auto LHS = ParsePrimary();
+    if (!LHS) {
+        return nullptr;
+    }
+
+    return ParseBinaryOpRHS(0, std::move(LHS));
 }
