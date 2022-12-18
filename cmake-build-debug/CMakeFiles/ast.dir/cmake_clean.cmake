@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ast.dir/llvm-tutorial/ast.cpp.o"
+  "CMakeFiles/ast.dir/llvm-tutorial/ast.cpp.o.d"
   "ast"
   "ast.pdb"
 )

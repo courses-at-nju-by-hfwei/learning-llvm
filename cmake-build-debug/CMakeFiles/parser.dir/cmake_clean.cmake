@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/parser.dir/llvm-tutorial/parser.cpp.o"
+  "CMakeFiles/parser.dir/llvm-tutorial/parser.cpp.o.d"
   "parser"
   "parser.pdb"
 )

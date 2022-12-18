@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/factorial0.dir/factorial0/factorial0.c.o -o factorial0 

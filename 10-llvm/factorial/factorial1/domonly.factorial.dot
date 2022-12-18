@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'factorial' function" {
+	label="Dominator tree for 'factorial' function";
+
+	Node0x235a3e0 [shape=record,label="{%1}"];
+	Node0x235a3e0 -> Node0x23a2cb0;
+	Node0x235a3e0 -> Node0x23a2cf0;
+	Node0x235a3e0 -> Node0x23a2d30;
+	Node0x23a2cb0 [shape=record,label="{%6}"];
+	Node0x23a2cf0 [shape=record,label="{%13}"];
+	Node0x23a2d30 [shape=record,label="{%7}"];
+}

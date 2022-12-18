@@ -1,0 +1,11 @@
+digraph "CFG for 'factorial' function" {
+	label="CFG for 'factorial' function";
+
+	Node0x14f4eb0 [shape=record,label="{%1:\l  %2 = icmp slt i32 %0, 2\l  br i1 %2, label %3, label %5\l|{<s0>T|<s1>F}}"];
+	Node0x14f4eb0:s0 -> Node0x14f4fa0;
+	Node0x14f4eb0:s1 -> Node0x14f4ff0;
+	Node0x14f4fa0 [shape=record,label="{%3:\l3:                                                \l  %4 = phi i32 [ 1, %1 ], [ %8, %5 ]\l  ret i32 %4\l}"];
+	Node0x14f4ff0 [shape=record,label="{%5:\l5:                                                \l  %6 = phi i32 [ %9, %5 ], [ 2, %1 ]\l  %7 = phi i32 [ %8, %5 ], [ 1, %1 ]\l  %8 = mul nsw i32 %6, %7\l  %9 = add nuw i32 %6, 1\l  %10 = icmp eq i32 %6, %0\l  br i1 %10, label %3, label %5\l|{<s0>T|<s1>F}}"];
+	Node0x14f4ff0:s0 -> Node0x14f4fa0;
+	Node0x14f4ff0:s1 -> Node0x14f4ff0;
+}

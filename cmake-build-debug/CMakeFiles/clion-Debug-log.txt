@@ -1,0 +1,21 @@
+/home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" -S /home/hengxin/Documents/compiler-class/learning-llvm -B /home/hengxin/Documents/compiler-class/learning-llvm/cmake-build-debug
+CMake Error at 10-llvm/CMakeLists.txt:1 (add_executable):
+  The target name "factorial/factorial0" is reserved or not valid for certain
+  CMake features, such as generator expressions, and may result in undefined
+  behavior.
+
+
+CMake Error at 10-llvm/CMakeLists.txt:2 (add_executable):
+  The target name "factorial/factorial1" is reserved or not valid for certain
+  CMake features, such as generator expressions, and may result in undefined
+  behavior.
+
+
+CMake Error at 10-llvm/CMakeLists.txt:3 (add_executable):
+  The target name "factorial/factorial2" is reserved or not valid for certain
+  CMake features, such as generator expressions, and may result in undefined
+  behavior.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/hengxin/Documents/compiler-class/learning-llvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".

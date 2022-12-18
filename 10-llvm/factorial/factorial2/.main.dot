@@ -1,0 +1,5 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x14f43b0 [shape=record,label="{%2:\l  %3 = call i32 @factorial(i32 2)\l  %4 = mul nsw i32 %3, 7\l  %5 = icmp eq i32 %4, 42\l  %6 = zext i1 %5 to i32\l  ret i32 %6\l}"];
+}

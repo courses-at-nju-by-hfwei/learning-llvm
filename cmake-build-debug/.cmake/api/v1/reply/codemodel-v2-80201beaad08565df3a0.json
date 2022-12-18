@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.19"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "10-llvm",
+					"jsonFile" : "directory-10-llvm-Debug-77a4e7d5050ffb30c7f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.19"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "10-llvm",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "learning_llvm",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ast::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ast-Debug-55f28dbad9c88b60fb8a.json",
+					"name" : "ast",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "factorial0::@a021e654514f459981c8",
+					"jsonFile" : "target-factorial0-Debug-5ef440c25f680ac9c757.json",
+					"name" : "factorial0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "factorial1::@a021e654514f459981c8",
+					"jsonFile" : "target-factorial1-Debug-ead0796a727091032770.json",
+					"name" : "factorial1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "factorial2::@a021e654514f459981c8",
+					"jsonFile" : "target-factorial2-Debug-da2d7211e4e62d71a50e.json",
+					"name" : "factorial2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ifab::@a021e654514f459981c8",
+					"jsonFile" : "target-ifab-Debug-20333141b022db8b71c4.json",
+					"name" : "ifab",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lexer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lexer-Debug-cf1f9e79972e9eb39b1f.json",
+					"name" : "lexer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-parser-Debug-bcc2e7733dc7cd40eab4.json",
+					"name" : "parser",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hengxin/Documents/compiler-class/learning-llvm/cmake-build-debug",
+		"source" : "/home/hengxin/Documents/compiler-class/learning-llvm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
