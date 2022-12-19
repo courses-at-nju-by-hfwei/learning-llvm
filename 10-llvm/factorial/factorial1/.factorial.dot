@@ -1,12 +1,33 @@
 digraph "CFG for 'factorial' function" {
 	label="CFG for 'factorial' function";
 
-	Node0xd74260 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  %4 = load i32, i32* %3, align 4\l  %5 = icmp eq i32 %4, 0\l  br i1 %5, label %6, label %7\l|{<s0>T|<s1>F}}"];
-	Node0xd74260:s0 -> Node0xd744e0;
-	Node0xd74260:s1 -> Node0xd74530;
-	Node0xd744e0 [shape=record,label="{%6:\l6:                                                \l  store i32 1, i32* %2, align 4\l  br label %13\l}"];
-	Node0xd744e0 -> Node0xd74640;
-	Node0xd74530 [shape=record,label="{%7:\l7:                                                \l  %8 = load i32, i32* %3, align 4\l  %9 = load i32, i32* %3, align 4\l  %10 = sub nsw i32 %9, 1\l  %11 = call i32 @factorial(i32 %10)\l  %12 = mul nsw i32 %8, %11\l  store i32 %12, i32* %2, align 4\l  br label %13\l}"];
-	Node0xd74530 -> Node0xd74640;
-	Node0xd74640 [shape=record,label="{%13:\l13:                                               \l  %14 = load i32, i32* %2, align 4\l  ret i32 %14\l}"];
+	Node0x1dc4bfc16f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%1|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc16f0:s0 -> Node0x1dc4bfc1790;
+	Node0x1dc4bfc16f0:s1 -> Node0x1dc4bfc1740;
+	Node0x1dc4bfc1740 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%3|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc1740:s0 -> Node0x1dc4bfc18d0;
+	Node0x1dc4bfc1740:s1 -> Node0x1dc4bfc1e70;
+	Node0x1dc4bfc1e70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%5|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc1e70:s0 -> Node0x1dc4bfc17e0;
+	Node0x1dc4bfc1e70:s1 -> Node0x1dc4bfc19c0;
+	Node0x1dc4bfc19c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a5c3fe70",label="{%16}"];
+	Node0x1dc4bfc19c0 -> Node0x1dc4bfc1ec0;
+	Node0x1dc4bfc1ec0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%18|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc1ec0:s0 -> Node0x1dc4bfc17e0;
+	Node0x1dc4bfc1ec0:s1 -> Node0x1dc4bfc1ec0;
+	Node0x1dc4bfc17e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%41|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc17e0:s0 -> Node0x1dc4bfc2140;
+	Node0x1dc4bfc17e0:s1 -> Node0x1dc4bfc21e0;
+	Node0x1dc4bfc21e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e1675170",label="{%48|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc21e0:s0 -> Node0x1dc4bfc2140;
+	Node0x1dc4bfc21e0:s1 -> Node0x1dc4bfc21e0;
+	Node0x1dc4bfc2140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%59|{<s0>T|<s1>F}}"];
+	Node0x1dc4bfc2140:s0 -> Node0x1dc4bfc1790;
+	Node0x1dc4bfc2140:s1 -> Node0x1dc4bfc18d0;
+	Node0x1dc4bfc18d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d6dce470",label="{%69}"];
+	Node0x1dc4bfc18d0 -> Node0x1dc4bf89360;
+	Node0x1dc4bf89360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%72|{<s0>T|<s1>F}}"];
+	Node0x1dc4bf89360:s0 -> Node0x1dc4bfc1790;
+	Node0x1dc4bf89360:s1 -> Node0x1dc4bf89360;
+	Node0x1dc4bfc1790 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%78}"];
 }

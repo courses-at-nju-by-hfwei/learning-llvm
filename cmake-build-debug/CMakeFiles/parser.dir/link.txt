@@ -1,1 +1,0 @@
-/usr/bin/c++ -g "CMakeFiles/parser.dir/llvm-tutorial/parser.cpp.o" -o parser 

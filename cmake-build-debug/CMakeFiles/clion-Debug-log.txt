@@ -1,4 +1,16 @@
-/home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" -S /home/hengxin/Documents/compiler-class/learning-llvm -B /home/hengxin/Documents/compiler-class/learning-llvm/cmake-build-debug
+C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/mingw64/bin/c++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\compilers\learning-llvm -B D:\compilers\learning-llvm\cmake-build-debug
+-- The C compiler identification is GNU 12.1.0
+-- The CXX compiler identification is GNU 12.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 CMake Error at 10-llvm/CMakeLists.txt:1 (add_executable):
   The target name "factorial/factorial0" is reserved or not valid for certain
   CMake features, such as generator expressions, and may result in undefined
@@ -18,4 +30,4 @@ CMake Error at 10-llvm/CMakeLists.txt:3 (add_executable):
 
 
 -- Configuring incomplete, errors occurred!
-See also "/home/hengxin/Documents/compiler-class/learning-llvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "D:/compilers/learning-llvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".
