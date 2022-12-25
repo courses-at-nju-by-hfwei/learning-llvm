@@ -1,0 +1,24 @@
+digraph g {
+    node [shape="record", height=.1]
+    nodeP[label = "{<scode> S.code|<snext> S.next = L1:}"]
+    nodeS[label="{<bcode> B.code|<b1true> B.true = L2:|<s1code> S1.code}"]
+    nodeP:scode -> nodeS
+
+    nodeS1[label = "{x = 0}"]
+    nodeS:s1code -> nodeS1
+
+    nodeB[label = "{<b1code> B1.code|<b1false> B1.false = L3:|<b2code> B2.code}"]
+    nodeS:bcode -> nodeB
+
+    nodeB1[label = "{if x \< 100 goto B1.true (L2) \n goto B1.false (L3)}"]
+    nodeB:b1code -> nodeB1
+
+    nodeB2[label = "{<b21code>B21.code|<b11true>B11.true = L4:|<b22code>B22.code}"]
+    nodeB:b2code -> nodeB2
+
+    nodeB21[label = "{if x \> 200 goto B21.true (L4) \n goto B21.false (L1)}"]
+    nodeB2:b21code -> nodeB21
+
+    nodeB22[label = "{if x != y goto B22.true (L2) \n goto B22.false (L1)}"]
+    nodeB2:b22code -> nodeB22
+}

@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/factorial2.dir/factorial2/factorial2.c.o"
-  "CMakeFiles/factorial2.dir/factorial2/factorial2.c.o.d"
-  "factorial2"
+  "CMakeFiles/factorial2.dir/factorial/factorial2/factorial2.c.obj"
+  "CMakeFiles/factorial2.dir/factorial/factorial2/factorial2.c.obj.d"
+  "factorial2.exe"
+  "factorial2.exe.manifest"
   "factorial2.pdb"
+  "libfactorial2.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

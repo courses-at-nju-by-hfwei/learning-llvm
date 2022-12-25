@@ -1,0 +1,15 @@
+digraph g {
+    node [shape="record", height=.1]
+    nodeP[label = "{<scode> S.code|<snext> S.next = L0}"]
+    nodeS[label="{<b1code> B1.code|<b1true> B1.true = L1:|<s1code> S1.code}"]
+    nodeP:scode -> nodeS
+
+    nodeB1[label="{goto B1.true (L1)}"]
+    nodeS1[label = "{<b11code> B11.code|<b11true> B11.true = L3:|<s11code> S11.code}"]
+    nodeS:b1code -> nodeB1
+    nodeS:s1code -> nodeS1
+    nodeS11[label = "{<assign> assign}"]
+    nodeB11[label = "{goto B11.false (L0)}"]
+    nodeS1:b11code -> nodeB11
+    nodeS1:s11code -> nodeS11
+}

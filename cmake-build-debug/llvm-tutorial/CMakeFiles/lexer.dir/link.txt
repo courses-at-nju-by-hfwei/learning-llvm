@@ -1,0 +1,3 @@
+C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\lexer.dir/objects.a
+D:\mingw64\bin\ar.exe qc CMakeFiles\lexer.dir/objects.a @CMakeFiles\lexer.dir\objects1.rsp
+D:\mingw64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\lexer.dir/objects.a -Wl,--no-whole-archive -o lexer.exe -Wl,--out-implib,liblexer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lexer.dir\linklibs.rsp

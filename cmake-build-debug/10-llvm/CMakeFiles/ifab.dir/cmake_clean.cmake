@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ifab.dir/ifab/ifab.c.o"
-  "CMakeFiles/ifab.dir/ifab/ifab.c.o.d"
-  "ifab"
+  "CMakeFiles/ifab.dir/ifab/ifab.c.obj"
+  "CMakeFiles/ifab.dir/ifab/ifab.c.obj.d"
+  "ifab.exe"
+  "ifab.exe.manifest"
   "ifab.pdb"
+  "libifab.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

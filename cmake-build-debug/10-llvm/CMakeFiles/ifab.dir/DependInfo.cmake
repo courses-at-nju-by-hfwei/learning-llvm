@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hengxin/Documents/compiler-class/learning-llvm/10-llvm/ifab/ifab.c" "10-llvm/CMakeFiles/ifab.dir/ifab/ifab.c.o" "gcc" "10-llvm/CMakeFiles/ifab.dir/ifab/ifab.c.o.d"
+  "D:/compilers/learning-llvm/10-llvm/ifab/ifab.c" "10-llvm/CMakeFiles/ifab.dir/ifab/ifab.c.obj" "gcc" "10-llvm/CMakeFiles/ifab.dir/ifab/ifab.c.obj.d"
   )
 
 # Targets to which this target links.

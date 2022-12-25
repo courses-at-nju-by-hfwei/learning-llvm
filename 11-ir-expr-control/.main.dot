@@ -1,0 +1,16 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x27b29868920 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  %4 = call i32 (i8*, ...) @scanf(i8* noundef getelementptr inbounds ([5 x\l... i8], [5 x i8]* @.str, i64 0, i64 0), i32* noundef %2, i32* noundef %3)\l  %5 = load i32, i32* %2, align 4\l  %6 = icmp slt i32 %5, 100\l  br i1 %6, label %14, label %7\l|{<s0>T|<s1>F}}"];
+	Node0x27b29868920:s0 -> Node0x27b29868600;
+	Node0x27b29868920:s1 -> Node0x27b298682e0;
+	Node0x27b298682e0 [shape=record,label="{%7:\l7:                                                \l  %8 = load i32, i32* %2, align 4\l  %9 = icmp sgt i32 %8, 200\l  br i1 %9, label %10, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x27b298682e0:s0 -> Node0x27b29868380;
+	Node0x27b298682e0:s1 -> Node0x27b298685b0;
+	Node0x27b29868380 [shape=record,label="{%10:\l10:                                               \l  %11 = load i32, i32* %2, align 4\l  %12 = load i32, i32* %3, align 4\l  %13 = icmp ne i32 %11, %12\l  br i1 %13, label %14, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x27b29868380:s0 -> Node0x27b29868600;
+	Node0x27b29868380:s1 -> Node0x27b298685b0;
+	Node0x27b29868600 [shape=record,label="{%14:\l14:                                               \l  store i32 0, i32* %2, align 4\l  br label %15\l}"];
+	Node0x27b29868600 -> Node0x27b298685b0;
+	Node0x27b298685b0 [shape=record,label="{%15:\l15:                                               \l  ret i32 0\l}"];
+}

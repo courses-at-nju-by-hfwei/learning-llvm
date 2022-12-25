@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hengxin/Documents/compiler-class/learning-llvm/10-llvm/factorial0/factorial0.c" "10-llvm/CMakeFiles/factorial0.dir/factorial0/factorial0.c.o" "gcc" "10-llvm/CMakeFiles/factorial0.dir/factorial0/factorial0.c.o.d"
+  "D:/compilers/learning-llvm/10-llvm/factorial/factorial0/factorial0.c" "10-llvm/CMakeFiles/factorial0.dir/factorial/factorial0/factorial0.c.obj" "gcc" "10-llvm/CMakeFiles/factorial0.dir/factorial/factorial0/factorial0.c.obj.d"
   )
 
 # Targets to which this target links.
