@@ -565,6 +565,50 @@
 					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="hw7">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/hw7.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 hw7"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw7/fast">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/hw7.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 hw7/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/11-ir-expr-control/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="D:/compilers/learning-llvm/10-llvm/factorial/factorial0/factorial0.c">
 			<Option target="factorial0"/>
@@ -586,6 +630,9 @@
 		</Unit>
 		<Unit filename="D:/compilers/learning-llvm/11-ir-expr-control/expr.c">
 			<Option target="expr"/>
+		</Unit>
+		<Unit filename="D:/compilers/learning-llvm/11-ir-expr-control/hw7.c">
+			<Option target="hw7"/>
 		</Unit>
 		<Unit filename="D:/compilers/learning-llvm/11-ir-expr-control/if-boolexpr.c">
 			<Option target="if-boolexpr"/>

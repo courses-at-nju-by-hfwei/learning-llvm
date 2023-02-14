@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\compilers\learning-llvm\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -171,6 +171,20 @@ if-boolexpr/fast:
 	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f 11-ir-expr-control\CMakeFiles\if-boolexpr.dir\build.make 11-ir-expr-control/CMakeFiles/if-boolexpr.dir/build
 .PHONY : if-boolexpr/fast
 
+# Convenience name for target.
+11-ir-expr-control/CMakeFiles/hw7.dir/rule:
+	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 11-ir-expr-control/CMakeFiles/hw7.dir/rule
+.PHONY : 11-ir-expr-control/CMakeFiles/hw7.dir/rule
+
+# Convenience name for target.
+hw7: 11-ir-expr-control/CMakeFiles/hw7.dir/rule
+.PHONY : hw7
+
+# fast build rule for target.
+hw7/fast:
+	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f 11-ir-expr-control\CMakeFiles\hw7.dir\build.make 11-ir-expr-control/CMakeFiles/hw7.dir/build
+.PHONY : hw7/fast
+
 array.obj: array.c.obj
 .PHONY : array.obj
 
@@ -218,6 +232,30 @@ expr.s: expr.c.s
 expr.c.s:
 	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f 11-ir-expr-control\CMakeFiles\expr.dir\build.make 11-ir-expr-control/CMakeFiles/expr.dir/expr.c.s
 .PHONY : expr.c.s
+
+hw7.obj: hw7.c.obj
+.PHONY : hw7.obj
+
+# target to build an object file
+hw7.c.obj:
+	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f 11-ir-expr-control\CMakeFiles\hw7.dir\build.make 11-ir-expr-control/CMakeFiles/hw7.dir/hw7.c.obj
+.PHONY : hw7.c.obj
+
+hw7.i: hw7.c.i
+.PHONY : hw7.i
+
+# target to preprocess a source file
+hw7.c.i:
+	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f 11-ir-expr-control\CMakeFiles\hw7.dir\build.make 11-ir-expr-control/CMakeFiles/hw7.dir/hw7.c.i
+.PHONY : hw7.c.i
+
+hw7.s: hw7.c.s
+.PHONY : hw7.s
+
+# target to generate assembly for a file
+hw7.c.s:
+	cd /d D:\compilers\learning-llvm\cmake-build-debug && $(MAKE) $(MAKESILENT) -f 11-ir-expr-control\CMakeFiles\hw7.dir\build.make 11-ir-expr-control/CMakeFiles/hw7.dir/hw7.c.s
+.PHONY : hw7.c.s
 
 if-boolexpr.obj: if-boolexpr.c.obj
 .PHONY : if-boolexpr.obj
@@ -277,6 +315,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... array
 	@echo ... expr
+	@echo ... hw7
 	@echo ... if
 	@echo ... if-boolexpr
 	@echo ... array.obj
@@ -285,6 +324,9 @@ help:
 	@echo ... expr.obj
 	@echo ... expr.i
 	@echo ... expr.s
+	@echo ... hw7.obj
+	@echo ... hw7.i
+	@echo ... hw7.s
 	@echo ... if-boolexpr.obj
 	@echo ... if-boolexpr.i
 	@echo ... if-boolexpr.s

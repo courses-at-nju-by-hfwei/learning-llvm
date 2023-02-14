@@ -1,0 +1,22 @@
+digraph while {
+    node [shape="record", height=.1]
+    nodeP[label = "{<scode> S.code|<snext> S.next = L0}"]
+
+    nodeS[label="{<begin>begin:|<b1code> B1.code|<b1true> B1.true = L1:|<s1code> S1.code|<goto> goto begin}", xlabel = "B1.false = S.next (L0)\nS1.next = begin"]
+    nodeP:scode -> nodeS
+
+    nodeB1[label="{goto B1.true (L1)}"]
+    nodeS:b1code -> nodeB1
+
+    nodeS1[label = "{<b11code> B11.code|<b11true> B11.true = L3:|<s11code> S11.code|<goto> goto S1.next (begin)|<b11false> B11.false = L4:|<s12code> S12.code}", xlabel = "S11.next = S12.next = S1.next (begin)"]
+    nodeS:s1code -> nodeS1
+
+    nodeB11[label = "{goto B11.false (L4)}"]
+    nodeS1:b11code -> nodeB11
+
+    nodeS11[label = "{<assign> assign}"]
+    nodeS1:s11code -> nodeS11
+
+    nodeS12[label = "{<assign> assign}"]
+    nodeS1:s12code -> nodeS12
+}

@@ -1,4 +1,38 @@
-C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/mingw64/bin/c++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\compilers\learning-llvm -B D:\compilers\learning-llvm\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: D:/compilers/learning-llvm/cmake-build-debug
+C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/mingw64/bin/c++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\compilers\learning-llvm -B D:\compilers\learning-llvm\cmake-build-debug
+CMake Error at 10-llvm/CMakeLists.txt:1 (add_executable):
+  add_executable cannot create target "hello" because another target with the
+  same name already exists.  The existing target is an executable created in
+  source directory "D:/compilers/learning-llvm/0-overview".  See
+  documentation for policy CMP0002 for more details.
+
+
+CMake Error at 10-llvm/CMakeLists.txt:2 (add_executable):
+  add_executable cannot create target "factorial0" because another target
+  with the same name already exists.  The existing target is an executable
+  created in source directory "D:/compilers/learning-llvm/0-overview".  See
+  documentation for policy CMP0002 for more details.
+
+
+CMake Error at 10-llvm/CMakeLists.txt:3 (add_executable):
+  add_executable cannot create target "factorial1" because another target
+  with the same name already exists.  The existing target is an executable
+  created in source directory "D:/compilers/learning-llvm/0-overview".  See
+  documentation for policy CMP0002 for more details.
+
+
+CMake Error at 10-llvm/CMakeLists.txt:4 (add_executable):
+  add_executable cannot create target "factorial2" because another target
+  with the same name already exists.  The existing target is an executable
+  created in source directory "D:/compilers/learning-llvm/0-overview".  See
+  documentation for policy CMP0002 for more details.
+
+
+CMake Error at 10-llvm/CMakeLists.txt:5 (add_executable):
+  add_executable cannot create target "ifab" because another target with the
+  same name already exists.  The existing target is an executable created in
+  source directory "D:/compilers/learning-llvm/0-overview".  See
+  documentation for policy CMP0002 for more details.
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/compilers/learning-llvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".

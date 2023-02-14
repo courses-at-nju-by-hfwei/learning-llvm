@@ -1,4 +1,4 @@
-digraph g {
+digraph ifelse {
     node [shape="record", height=.1]
     nodeP[label = "{<scode> S.code|<snext> S.next = L0}"]
     nodeS[label="{<b1code> B1.code|<b1true> B1.true = L1:|<s1code> S1.code |<goto> goto S.next|<b1false> B1.false = L2:|<s2code> S2.code}"]
