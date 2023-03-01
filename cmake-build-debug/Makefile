@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\compilers\learning-llvm\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8214.51\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -153,6 +153,45 @@ parser: cmake_check_build_system
 parser/fast:
 	$(MAKE) $(MAKESILENT) -f llvm-tutorial\CMakeFiles\parser.dir\build.make llvm-tutorial/CMakeFiles/parser.dir/build
 .PHONY : parser/fast
+
+#=============================================================================
+# Target rules for targets named f
+
+# Build rule for target.
+f : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 f
+.PHONY : f
+
+# fast build rule for target.
+f/fast:
+	$(MAKE) $(MAKESILENT) -f 0-overview\CMakeFiles\f.dir\build.make 0-overview/CMakeFiles/f.dir/build
+.PHONY : f/fast
+
+#=============================================================================
+# Target rules for targets named opt
+
+# Build rule for target.
+opt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 opt
+.PHONY : opt
+
+# fast build rule for target.
+opt/fast:
+	$(MAKE) $(MAKESILENT) -f 0-overview\CMakeFiles\opt.dir\build.make 0-overview/CMakeFiles/opt.dir/build
+.PHONY : opt/fast
+
+#=============================================================================
+# Target rules for targets named naming
+
+# Build rule for target.
+naming: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 naming
+.PHONY : naming
+
+# fast build rule for target.
+naming/fast:
+	$(MAKE) $(MAKESILENT) -f 0-overview\CMakeFiles\naming.dir\build.make 0-overview/CMakeFiles/naming.dir/build
+.PHONY : naming/fast
 
 #=============================================================================
 # Target rules for targets named hello
@@ -295,6 +334,7 @@ help:
 	@echo ... array
 	@echo ... ast
 	@echo ... expr
+	@echo ... f
 	@echo ... factorial0
 	@echo ... factorial1
 	@echo ... factorial2
@@ -304,6 +344,8 @@ help:
 	@echo ... if-boolexpr
 	@echo ... ifab
 	@echo ... lexer
+	@echo ... naming
+	@echo ... opt
 	@echo ... parser
 .PHONY : help
 

@@ -1,2 +1,3 @@
-add_executable(factorial1 factorial/factorial.c)
+add_executable(f factorial/f.c)
+add_executable(opt opt/opt.c)
 add_executable(naming naming/naming.c)

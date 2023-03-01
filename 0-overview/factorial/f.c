@@ -1,7 +1,7 @@
 // Created by hengxin on 02/14/23.
 
-// (1) clang .\factorial.c -o f
-// (2) clang -S -emit-llvm .\factorial.c -o .\f-opt1.ll -O1 -g0
+// (1) clang f.c -o f       .\f.exe
+// (2) clang -emit-llvm -S f.c -o f-opt1.ll -O1 -g0
 
 #include <stdio.h>
 int factorial(int val);

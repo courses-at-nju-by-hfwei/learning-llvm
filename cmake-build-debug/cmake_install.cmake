@@ -44,6 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/compilers/learning-llvm/cmake-build-debug/0-overview/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/compilers/learning-llvm/cmake-build-debug/10-llvm/cmake_install.cmake")
 endif()
 

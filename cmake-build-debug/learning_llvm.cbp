@@ -5,7 +5,7 @@
 		<Option title="learning_llvm"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\llvm-tutorial\;CMake Files\10-llvm\;CMake Files\11-ir-expr-control\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\llvm-tutorial\;CMake Files\0-overview\;CMake Files\10-llvm\;CMake Files\11-ir-expr-control\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug"/>
@@ -167,6 +167,138 @@
 					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/llvm-tutorial/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/llvm-tutorial/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/llvm-tutorial/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/0-overview/f.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/0-overview"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 f"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f/fast">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/0-overview/f.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/0-overview"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 f/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opt">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/0-overview/opt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/0-overview"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 opt"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opt/fast">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/0-overview/opt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/0-overview"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 opt/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="naming">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/0-overview/naming.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/0-overview"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 naming"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="naming/fast">
+				<Option output="D:/compilers/learning-llvm/cmake-build-debug/0-overview/naming.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/compilers/learning-llvm/cmake-build-debug/0-overview"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 naming/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/compilers/learning-llvm/cmake-build-debug/0-overview/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hello">
@@ -610,6 +742,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/compilers/learning-llvm/0-overview/factorial/f.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="D:/compilers/learning-llvm/0-overview/naming/naming.c">
+			<Option target="naming"/>
+		</Unit>
+		<Unit filename="D:/compilers/learning-llvm/0-overview/opt/opt.c">
+			<Option target="opt"/>
+		</Unit>
 		<Unit filename="D:/compilers/learning-llvm/10-llvm/factorial/factorial0/factorial0.c">
 			<Option target="factorial0"/>
 		</Unit>
@@ -654,6 +795,9 @@
 		</Unit>
 		<Unit filename="D:/compilers/learning-llvm/llvm-tutorial/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\llvm-tutorial\"/>
+		</Unit>
+		<Unit filename="D:/compilers/learning-llvm/0-overview/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\0-overview\"/>
 		</Unit>
 		<Unit filename="D:/compilers/learning-llvm/10-llvm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\10-llvm\"/>

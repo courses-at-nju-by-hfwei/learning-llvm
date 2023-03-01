@@ -8,10 +8,10 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/bin/cmake.exe",
-			"cpack" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/bin/cpack.exe",
-			"ctest" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/bin/ctest.exe",
-			"root" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24"
+			"cmake" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "C:/Users/hfwei/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/win/x64/share/cmake-3.24"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-fbd59f68dc08f6193aee.json",
+			"jsonFile" : "codemodel-v2-814f47fc0a8db40e6fab.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-d16d5ce8316ad19b5408.json",
+			"jsonFile" : "cache-v2-61cb2ead4431c03b9ea0.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-d4c3f47d2664220fbf96.json",
+			"jsonFile" : "cmakeFiles-v1-5c29c43052833d6f8c8f.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-d16d5ce8316ad19b5408.json",
+			"jsonFile" : "cache-v2-61cb2ead4431c03b9ea0.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-d4c3f47d2664220fbf96.json",
+			"jsonFile" : "cmakeFiles-v1-5c29c43052833d6f8c8f.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-fbd59f68dc08f6193aee.json",
+			"jsonFile" : "codemodel-v2-814f47fc0a8db40e6fab.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
