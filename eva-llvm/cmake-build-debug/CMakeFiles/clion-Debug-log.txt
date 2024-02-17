@@ -1,0 +1,70 @@
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec "/mnt/c/Users/hfwei/AppData/Local/Programs/CLion 2/bin/ttyfix" /bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /mnt/d/compilers/llvm/eva-llvm/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/d/compilers/llvm/eva-llvm -B /mnt/d/compilers/llvm/eva-llvm/cmake-build-debug"
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake:44 (message):
+  check_source_compiles: C: needs to be enabled before use.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)
+  /usr/lib/llvm-17/cmake/FindFFI.cmake:44 (check_c_source_compiles)
+  /usr/lib/llvm-17/cmake/LLVMConfig.cmake:276 (find_package)
+  CMakeLists.txt:14 (find_package)
+
+
+-- Could NOT find FFI (missing: HAVE_FFI_CALL) 
+-- Could NOT find LibEdit (missing: LibEdit_INCLUDE_DIRS LibEdit_LIBRARIES) 
+CMake Error at /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake:44 (message):
+  check_source_compiles: C: needs to be enabled before use.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)
+  /usr/lib/llvm-17/cmake/FindTerminfo.cmake:21 (check_c_source_compiles)
+  /usr/lib/llvm-17/cmake/LLVMConfig.cmake:288 (find_package)
+  CMakeLists.txt:14 (find_package)
+
+
+-- Could NOT find Terminfo (missing: Terminfo_LINKABLE) 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Could NOT find zstd (missing: zstd_LIBRARY zstd_INCLUDE_DIR) 
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13") 
+-- Could NOT find CURL (missing: CURL_LIBRARY CURL_INCLUDE_DIR) 
+-- Configuring incomplete, errors occurred!
+See also "/mnt/d/compilers/llvm/eva-llvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+
+Cannot get compiler information:
+	Compiler exited with error code 1: D:\mingw64\bin\c++.exe -xc++ -g -fpch-preprocess -v -dD -E
+	Using built-in specs.
+	COLLECT_GCC=c++.exe
+	OFFLOAD_TARGET_NAMES=nvptx-none
+	Target: x86_64-w64-mingw32
+	Configured with: ../configure --prefix=/R/winlibs64-11.3.0ucrt/inst_gcc-12.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++,jit --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --disable-libstdcxx-pch --with-mpc=/e/Prog/winlibs64-11.3.0ucrt/custombuilt --with-mpfr=/e/Prog/winlibs64-11.3.0ucrt/custombuilt --with-gmp=/e/Prog/winlibs64-11.3.0ucrt/custombuilt --with-isl=/e/Prog/winlibs64-11.3.0ucrt/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64-11.3.0ucrt/gcc-12.1.0/build_mingw/mingw-w64 CFLAGS='-I/e/Prog/winlibs64-11.3.0ucrt/custombuilt/include/libdl-win32 -D__USE_MINGW_ACCESS' CXXFLAGS=-D__USE_MINGW_ACCESS LDFLAGS='-Wl,--disable-nxcompat -Wl,--disable-high-entropy-va -Wl,--disable-dynamicbase'
+	Thread model: posix
+	Supported LTO compression algorithms: zlib zstd
+	gcc version 12.1.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders) 
+	COLLECT_GCC_OPTIONS='-g' '-fpch-preprocess' '-v' '-dD' '-E' '-D' '___CIDR_DEFINITIONS_END' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+	 d:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/12.1.0/cc1plus.exe -E -quiet -v -iprefix d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/ -D_REENTRANT -D ___CIDR_DEFINITIONS_END /mnt/c/Users/hfwei/AppData/Local/Temp/compiler-file17443984627708925767 -mtune=generic -march=x86-64 -fpch-preprocess -g -fworking-directory -dD -dumpbase compiler-file17443984627708925767
+	ignoring duplicate directory "d:/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0"
+	ignoring duplicate directory "d:/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32"
+	ignoring duplicate directory "d:/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward"
+	ignoring duplicate directory "d:/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/12.1.0/include"
+	ignoring nonexistent directory "R:/winlibs64-11.3.0ucrt/inst_gcc-12.1.0/share/gcc/include"
+	ignoring nonexistent directory "/R/winlibs64-11.3.0ucrt/inst_gcc-12.1.0/share/gcc/include"
+	ignoring duplicate directory "d:/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed"
+	ignoring duplicate directory "d:/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include"
+	ignoring nonexistent directory "/mingw/include"
+	#include "..." search starts here:
+	#include <...> search starts here:
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/x86_64-w64-mingw32
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include/c++/12.1.0/backward
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../include
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/include-fixed
+	 d:\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/include
+	End of search list.
+	cc1plus.exe: fatal error: /mnt/c/Users/hfwei/AppData/Local/Temp/compiler-file17443984627708925767: No such file or directory
+	compilation terminated.
+	
+	

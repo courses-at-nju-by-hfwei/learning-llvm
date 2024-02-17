@@ -1,3 +1,0 @@
-C:\Users\hfwei\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\f.dir/objects.a
-D:\mingw64\bin\ar.exe qc CMakeFiles\f.dir/objects.a @CMakeFiles\f.dir\objects1.rsp
-D:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\f.dir/objects.a -Wl,--no-whole-archive -o f.exe -Wl,--out-implib,libf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\f.dir\linklibs.rsp
