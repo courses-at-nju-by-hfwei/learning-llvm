@@ -7,7 +7,7 @@
   // clang -cc1 -ast-view naming.c (for graphviz)
 // (2) clang -fsyntax-only -Xclang -dump-tokens naming.c
 
-#include <stdio.h>
+// #include <stdio.h>
 
 // The code with really bad names for variables.
 int main() {

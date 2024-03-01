@@ -1,0 +1,52 @@
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec "/mnt/c/Users/hfwei/AppData/Local/Programs/CLion 2/bin/ttyfix" /bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /mnt/d/compilers/learning-llvm/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/d/compilers/learning-llvm -B /mnt/d/compilers/learning-llvm/cmake-build-debug"
+CMake Error at llvm-in-class/CMakeLists.txt:6 (add_subdirectory):
+  add_subdirectory given source "llvm-tutorial" which is not an existing
+  directory.
+
+
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/x86_64-linux-gnu/libffi.so  
+-- Looking for histedit.h
+CMake Warning (dev) at /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake:82 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    /usr/lib/x86_64-linux-gnu/libedit.so
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  /usr/lib/llvm-17/cmake/FindLibEdit.cmake:28 (check_include_file)
+  /usr/lib/llvm-17/cmake/LLVMConfig.cmake:283 (find_package)
+  eva-llvm/CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for histedit.h - found
+-- Found LibEdit: /usr/include (found version "2.11") 
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /usr/lib/x86_64-linux-gnu/libtinfo.so  
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Found zstd: /usr/lib/x86_64-linux-gnu/libzstd.so  
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13") 
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+CMake Error at /usr/lib/llvm-17/lib/cmake/llvm/LLVMExports.cmake:37 (message):
+  Some (but not all) targets in this export set were already defined.
+
+  Targets Defined: opt
+
+  Targets not yet defined:
+  LLVMDemangle;LLVMSupport;LLVMTableGen;LLVMTableGenGlobalISel;LLVMTableGenCommon;llvm-tblgen;LLVMCore;LLVMFuzzerCLI;LLVMFuzzMutate;LLVMFileCheck;LLVMInterfaceStub;LLVMIRPrinter;LLVMIRReader;LLVMCodeGenTypes;LLVMCodeGen;LLVMSelectionDAG;LLVMAsmPrinter;LLVMMIRParser;LLVMGlobalISel;LLVMBinaryFormat;LLVMBitReader;LLVMBitWriter;LLVMBitstreamReader;LLVMDWARFLinker;LLVMDWARFLinkerParallel;LLVMExtensions;LLVMFrontendHLSL;LLVMFrontendOpenACC;LLVMFrontendOpenMP;LLVMTransformUtils;LLVMInstrumentation;LLVMAggressiveInstCombine;LLVMInstCombine;LLVMScalarOpts;LLVMipo;LLVMVectorize;LLVMObjCARCOpts;LLVMCoroutines;LLVMCFGuard;LLVMLinker;LLVMAnalysis;LLVMLTO;LLVMMC;LLVMMCParser;LLVMMCDisassembler;LLVMMCA;LLVMObjCopy;LLVMObject;LLVMObjectYAML;LLVMOption;LLVMRemarks;LLVMDebuginfod;LLVMDebugInfoDWARF;LLVMDebugInfoGSYM;LLVMDebugInfoLogicalView;LLVMDebugInfoMSF;LLVMDebugInfoCodeView;LLVMDebugInfoPDB;LLVMSymbolize;LLVMDebugInfoBTF;LLVMDWP;LLVMExecutionEngine;LLVMInterpreter;LLVMJITLink;LLVMMCJIT;LLVMOrcJIT;LLVMOrcShared;LLVMOrcTargetProcess;LLVMRuntimeDyld;LLVMPerfJITEvents;LLVMTarget;LLVMAArch64CodeGen;LLVMAArch64AsmParser;LLVMAArch64Disassembler;LLVMAArch64Desc;LLVMAArch64Info;LLVMAArch64Utils;LLVMAMDGPUCodeGen;LLVMAMDGPUAsmParser;LLVMAMDGPUDisassembler;LLVMAMDGPUTargetMCA;LLVMAMDGPUDesc;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMARMCodeGen;LLVMARMAsmParser;LLVMARMDisassembler;LLVMARMDesc;LLVMARMInfo;LLVMARMUtils;LLVMAVRCodeGen;LLVMAVRAsmParser;LLVMAVRDisassembler;LLVMAVRDesc;LLVMAVRInfo;LLVMBPFCodeGen;LLVMBPFAsmParser;LLVMBPFDisassembler;LLVMBPFDesc;LLVMBPFInfo;LLVMHexagonCodeGen;LLVMHexagonAsmParser;LLVMHexagonDisassembler;LLVMHexagonDesc;LLVMHexagonInfo;LLVMLanaiCodeGen;LLVMLanaiAsmParser;LLVMLanaiDisassembler;LLVMLanaiDesc;LLVMLanaiInfo;LLVMLoongArchCodeGen;LLVMLoongArchAsmParser;LLVMLoongArchDisassembler;LLVMLoongArchDesc;LLVMLoongArchInfo;LLVMMipsCodeGen;LLVMMipsAsmParser;LLVMMipsDisassembler;LLVMMipsDesc;LLVMMipsInfo;LLVMMSP430CodeGen;LLVMMSP430Desc;LLVMMSP430Info;LLVMMSP430AsmParser;LLVMMSP430Disassembler;LLVMNVPTXCodeGen;LLVMNVPTXDesc;LLVMNVPTXInfo;LLVMPowerPCCodeGen;LLVMPowerPCAsmParser;LLVMPowerPCDisassembler;LLVMPowerPCDesc;LLVMPowerPCInfo;LLVMRISCVCodeGen;LLVMRISCVAsmParser;LLVMRISCVDisassembler;LLVMRISCVDesc;LLVMRISCVTargetMCA;LLVMRISCVInfo;LLVMSparcCodeGen;LLVMSparcAsmParser;LLVMSparcDisassembler;LLVMSparcDesc;LLVMSparcInfo;LLVMSystemZCodeGen;LLVMSystemZAsmParser;LLVMSystemZDisassembler;LLVMSystemZDesc;LLVMSystemZInfo;LLVMVECodeGen;LLVMVEAsmParser;LLVMVEDisassembler;LLVMVEInfo;LLVMVEDesc;LLVMWebAssemblyCodeGen;LLVMWebAssemblyAsmParser;LLVMWebAssemblyDisassembler;LLVMWebAssemblyDesc;LLVMWebAssemblyInfo;LLVMWebAssemblyUtils;LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Disassembler;LLVMX86TargetMCA;LLVMX86Desc;LLVMX86Info;LLVMXCoreCodeGen;LLVMXCoreDisassembler;LLVMXCoreDesc;LLVMXCoreInfo;LLVMM68kCodeGen;LLVMM68kInfo;LLVMM68kDesc;LLVMM68kAsmParser;LLVMM68kDisassembler;LLVMXtensaCodeGen;LLVMXtensaAsmParser;LLVMXtensaDisassembler;LLVMXtensaDesc;LLVMXtensaInfo;LLVMAsmParser;LLVMLineEditor;LLVMProfileData;LLVMCoverage;LLVMPasses;LLVMTargetParser;LLVMTextAPI;LLVMDlltoolDriver;LLVMLibDriver;LLVMXRay;LLVMWindowsDriver;LLVMWindowsManifest;FileCheck;llvm-PerfectShuffle;count;not;UnicodeNameMappingGenerator;yaml-bench;split-file;omp;omptarget;omptarget.rtl.amdgpu;omptarget.rtl.cuda;omptarget.rtl.x86_64;llvm-omp-device-info;llvm-omp-kernel-replay;LTO;LLVMgold;llvm-ar;llvm-config;llvm-lto;llvm-profdata;mlir-linalg-ods-yaml-gen;mlir-lsp-server;mlir-opt;mlir-pdll-lsp-server;mlir-reduce;mlir-translate;tblgen-lsp-server;mlir-cpu-runner;LLVMBOLTCore;LLVMBOLTPasses;LLVMBOLTProfile;LLVMBOLTRewrite;LLVMBOLTRuntimeLibs;LLVMBOLTTargetAArch64;LLVMBOLTTargetX86;LLVMBOLTTargetRISCV;LLVMBOLTUtils;bugpoint;dsymutil;llc;lli-child-target;lli;llvm-as;llvm-bcanalyzer;llvm-c-test;llvm-cat;llvm-cfi-verify;LLVMCFIVerify;llvm-cov;llvm-cvtres;llvm-cxxdump;llvm-cxxfilt;llvm-cxxmap;llvm-debuginfo-analyzer;llvm-debuginfod;llvm-debuginfod-find;llvm-diff;LLVMDiff;llvm-dis;llvm-dwarfdump;llvm-dwarfutil;llvm-dwp;llvm-exegesis;LLVMExegesisX86;LLVMExegesisAArch64;LLVMExegesisPowerPC;LLVMExegesisMips;LLVMExegesis;llvm-extract;llvm-gsymutil;llvm-ifs;llvm-jitlink-executor;llvm-jitlink;llvm-libtool-darwin;llvm-link;llvm-lipo;llvm-lto2;llvm-mc;llvm-mca;llvm-ml;llvm-modextract;llvm-mt;llvm-nm;llvm-objcopy;llvm-objdump;llvm-opt-report;llvm-pdbutil;llvm-profgen;llvm-rc;llvm-readobj;llvm-reduce;llvm-remark-size-diff;llvm-remarkutil;llvm-rtdyld;LLVM;llvm-sim;llvm-size;llvm-split;llvm-stress;llvm-strings;llvm-symbolizer;llvm-tapi-diff;llvm-tli-checker;llvm-undname;llvm-xray;obj2yaml;Remarks;sancov;sanstats;verify-uselistorder;yaml2obj;PollyISL;Polly;LLVMPolly
+
+
+Call Stack (most recent call first):
+  /usr/lib/llvm-17/cmake/LLVMConfig.cmake:369 (include)
+  eva-llvm/CMakeLists.txt:14 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/mnt/d/compilers/learning-llvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".
